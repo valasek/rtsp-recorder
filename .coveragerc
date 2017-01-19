@@ -1,0 +1,5 @@
+[run]
+include = rtsp_recorder/*
+omit = *migrations*, *tests*
+plugins =
+    django_coverage_plugin
