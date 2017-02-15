@@ -47,6 +47,9 @@ LOCAL_APPS = (
     # custom users app
     'rtsp_recorder.users.apps.UsersConfig',
     # Your stuff: custom apps go here
+
+    # RTSP recording app
+    'rtsp_recorder.recorder',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to Real time stream recorder's documentation!
-====================================================================
+=====================================================
 
 Contents:
 

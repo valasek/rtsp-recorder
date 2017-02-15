@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h4>1. Select stream URL</h4>
+    <select name="rpts" title="rpts">
+        <option value="one" selected>rtsp://recorder.ataccama.com:7447/580737a4e4b0ec2dd0ae32c0_0</option>
+        <option value="two">new one</option>
+    </select>
+    &nbsp;&nbsp;<i class="fa fa-plus"></i>
+    <hr>
+    <div class="row">
+        <div class="col-sm-6">
+            <h4>2. Check the stream preview</h4>
+            <embed type="application/x-vlc-plugin" pluginspage="http://www.videolan.org" autoplay="yes" loop="no" width="300" height="200" target="rtsp://recorder.ataccama.com:7447/580737a4e4b0ec2dd0ae32c0_0" />
+            <object classid="clsid:9BE31822-FDAD-461B-AD51-BE1D1C159921" codebase="http://download.videolan.org/pub/videolan/vlc/last/win32/axvlc.cab" id="vlc" style="display:none;" >
+                <embed type="application/x-vlc-plugin" pluginspage="http://www.videolan.org"/>
+            </object>
+            <video src="rtsp://recorder.ataccama.com:7447/580737a4e4b0ec2dd0ae32c0_0">
+                Your browser does not support the VIDEO tag and/or RTP streams.
+            </video>
+        </div>
+        <div class="col-sm-6">
+            <h4>3. Start the recording</h4>
+            <p>Start recording now</p>
+            <form action="#" method="get">
+                <input type="submit"  value="Start" name="mybtn">
+            </form>
+            <form action="#" method="get">
+                <input type="submit"  value="Stop" name="mybtn">
+            </form>
+        </div>
+    </div>
+    <hr>
+    <h4>Running recordings</h4>
+    <hr>
+    <h4>Scheduled recordings</h4>
+    <hr>
+    <h4>Recorded sessions</h4>
+{% endblock content %}

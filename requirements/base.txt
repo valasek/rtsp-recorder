@@ -40,8 +40,6 @@ pytz==2016.10
 django-redis==4.7.0
 redis>=2.10.5
 
-
-
-
-
 # Your custom requirements go here
+# Celery support
+celery==4.0.2
